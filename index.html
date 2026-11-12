@@ -1,0 +1,281 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Aryan's portfolio, selected projects, and areas of interest.">
+    <title>Aryan | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        const savedTheme = localStorage.getItem("theme");
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.dataset.theme = savedTheme || (prefersDark ? "dark" : "light");
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="site-logo" href="#home" aria-label="One Hub home">
+            <img src="logo.jpeg" alt="One Hub">
+        </a>
+
+        <nav id="main-navigation" aria-label="Main navigation">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Work</a>
+
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="header-actions">
+            <button class="theme-toggle" type="button" role="switch" aria-checked="false" aria-label="Dark mode" title="Toggle dark mode">
+                <span id="theme-toggle-icon" aria-hidden="true">☾</span>
+            </button>
+            <a class="header-cta" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a>
+            <button class="menu-toggle" type="button" aria-controls="main-navigation" aria-expanded="false" aria-label="Open navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" aria-labelledby="intro-title">
+            <div class="dark-mode-video-frame" aria-hidden="true">
+                <video class="dark-mode-main-video" muted loop playsinline preload="none">
+                    <source src="animation.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="hero-copy">
+                <p class="eyebrow"><span class="availability-dot"></span> Curious creator · Open to opportunities</p>
+                <h1 id="intro-title">Hi, I’m Aryan.<br>I make <em>ideas</em><br>work on the web.</h1>
+                <p class="hero-description">I bring thoughtful design, modern web tools, and a little help from AI together to create useful digital experiences.</p>
+                <div class="hero-actions">
+                    <a class="button button-dark" href="#projects">Explore my work <span aria-hidden="true">↗</span></a>
+                    <a class="text-link" href="#about">A little about me <span aria-hidden="true">↓</span></a>
+                </div>
+                <div class="hero-meta">
+                    <span>DESIGN MINDED</span><span>AI CURIOUS</span><span>ALWAYS LEARNING</span>
+                </div>
+            </div>
+            <aside class="hero-art" aria-label="Luffy portrait artwork">
+                <div class="portrait-frame">
+                    <span class="portrait-backdrop" aria-hidden="true"></span>
+                    <span class="portrait-sun" aria-hidden="true"></span>
+                    <span class="portrait-orbit portrait-orbit-one" aria-hidden="true"></span>
+                    <span class="portrait-orbit portrait-orbit-two" aria-hidden="true"></span>
+                    <img class="portrait-image" src="luffy.jpg" alt="Monkey D. Luffy wearing his straw hat">
+                    <span class="portrait-caption">A LITTLE CURIOSITY<br>GOES A LONG WAY</span>
+                    <span class="portrait-index">01 — 04</span>
+                </div>
+            </aside>
+        </section>
+
+        <blockquote class="hero-quote">
+            <div class="hero-quote-track">
+                <span>As long as I'm alive, there's still a chance.</span>
+                <span aria-hidden="true">As long as I'm alive, there's still a chance.</span>
+                <span aria-hidden="true">As long as I'm alive, there's still a chance.</span>
+                <span aria-hidden="true">As long as I'm alive, there's still a chance.</span>
+                <span aria-hidden="true">As long as I'm alive, there's still a chance.</span>
+                <span aria-hidden="true">As long as I'm alive, there's still a chance.</span>
+            </div>
+        </blockquote>
+
+        <section id="about" aria-labelledby="about-title">
+            <div class="section-kicker"><span>01</span><span>THE PERSON BEHIND THE PIXELS</span></div>
+            <div class="about-grid">
+                <div class="about-intro">
+                    <h2 id="about-title">Thoughtful by nature.<br><em>Curious by default.</em></h2>
+                    <p class="about-bio">I’m Aryan, a curious creator exploring web design, frontend development, and thoughtful digital experiences.</p>
+                </div>
+                <div class="about-copy">
+                    <p>I enjoy learning how things work and turning ideas into clear, engaging experiences. I care about the details and believe good digital work should feel as considered as it looks.</p>
+                    <p>AI is part of my toolkit for research, brainstorming, and repetitive tasks. I review and refine what it produces, keeping the decisions and creativity human-led.</p>
+                    <h3>A few things I’m exploring</h3>
+                    <ul class="interest-list">
+                        <li>Web design</li>
+                        <li>Frontend development</li>
+                        <li>Creative problem-solving</li>
+                        <li>AI-assisted workflows</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="workflow" aria-labelledby="workflow-title">
+            <div class="section-kicker"><span>02</span><span>A GOOD PROCESS, NOT A RIGID FORMULA</span></div>
+            <div class="section-heading">
+                <h2 id="workflow-title">From first thought<br>to <em>final detail.</em></h2>
+                <p class="workflow-intro">A thoughtful, flexible process helps turn a rough idea into a useful digital experience.</p>
+            </div>
+            <ol class="workflow-list">
+                <li class="workflow-step">
+                    <span class="workflow-number">01</span>
+                    <div>
+                        <h3>Discover</h3>
+                        <p>Understand the goal, the people, and the problem worth solving.</p>
+                    </div>
+                </li>
+                <li class="workflow-step">
+                    <span class="workflow-number">02</span>
+                    <div>
+                        <h3>Explore</h3>
+                        <p>Research, sketch ideas, and use AI to explore possibilities faster.</p>
+                    </div>
+                </li>
+                <li class="workflow-step">
+                    <span class="workflow-number">03</span>
+                    <div>
+                        <h3>Design</h3>
+                        <p>Shape the strongest idea into a clear, considered experience.</p>
+                    </div>
+                </li>
+                <li class="workflow-step">
+                    <span class="workflow-number">04</span>
+                    <div>
+                        <h3>Build &amp; refine</h3>
+                        <p>Bring it to life, test the details, and improve what needs attention.</p>
+                    </div>
+                </li>
+                <li class="workflow-step">
+                    <span class="workflow-number">05</span>
+                    <div>
+                        <h3>Share</h3>
+                        <p>Polish the finished work and make it ready for the world.</p>
+                    </div>
+                </li>
+            </ol>
+        </section>
+
+        <section id="projects" aria-label="Selected projects">
+            <div class="page-kicker"><span>PAGE 03</span><span>MADE, TESTED, STILL LEARNING</span></div>
+            <div class="work-hero" aria-labelledby="projects-title">
+                <p class="eyebrow">A SMALL, HONEST SELECTION</p>
+                <h2 id="projects-title">Things I’ve<br><span class="project-highlight">put into the world.</span></h2>
+                <p>One live website and a few visual studies. The concepts are explorations, not launched products.</p>
+            </div>
+
+            <div class="work-list">
+                <article class="work-entry">
+                    <a class="entry-art travel-art" href="../ONE%20HUB/home.html" aria-label="Open the One Hub Travel website">
+                        <span class="art-label">LIVE WEBSITE / 2026</span>
+                        <img class="travel-image" src="sikkim1.png" alt="Sikkim mountains, monastery, and prayer flags at sunset">
+                        <span class="art-index">01</span>
+                        <span class="entry-open">VIEW SITE ↗</span>
+                    </a>
+                    <div class="entry-copy">
+                        <div class="entry-meta"><span>01</span><span>WEB DESIGN</span><span>TRAVEL &amp; HOSPITALITY</span></div>
+                        <h3>One Hub Travel</h3>
+                        <p>A travel website for exploring Sikkim with local guidance and thoughtful trip planning. I worked on the visual direction and the website experience.</p>
+                        <dl class="entry-facts"><div><dt>STATUS</dt><dd>Live website</dd></div><div><dt>PLACE</dt><dd>Sikkim, India</dd></div></dl>
+                        <a class="button button-dark" href="../ONE%20HUB/home.html">Visit One Hub Travel <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+
+                <article class="work-entry concept-entry">
+                    <div class="entry-art planner-art" role="img" aria-label="Abstract planner interface concept">
+                        <span class="art-label">UI STUDY / NOT A LIVE PRODUCT</span>
+                        <div class="planner-window"><span class="window-dots">● ● ●</span><small>MONDAY / 09:00</small><strong>Make room<br>for the day.</strong><i></i><i></i><i></i></div>
+                        <span class="art-index">02</span>
+                    </div>
+                    <div class="entry-copy">
+                        <div class="entry-meta"><span>02</span><span>INTERFACE EXPLORATION</span></div>
+                        <h3>Small Hours</h3>
+                        <p>A concept for a gentle daily planner: fewer demands on the screen, more room to choose what matters today.</p>
+                        <dl class="entry-facts"><div><dt>STATUS</dt><dd>Visual concept</dd></div><div><dt>FOCUS</dt><dd>Calm, simple planning</dd></div></dl>
+                    </div>
+                </article>
+
+                <article class="work-entry concept-entry">
+                    <div class="entry-art field-art" role="img" aria-label="Abstract typography and shape study">
+                        <span class="art-label">VISUAL STUDY / IN PROGRESS</span>
+                        <div class="field-grid" aria-hidden="true"></div>
+                        <strong>LOOK<br>AGAIN<span>.</span></strong>
+                        <span class="art-index">03</span>
+                    </div>
+                    <div class="entry-copy">
+                        <div class="entry-meta"><span>03</span><span>TYPE &amp; COMPOSITION</span></div>
+                        <h3>Look Again</h3>
+                        <p>A short visual exercise in using type, contrast, and a simple grid to make a small message feel unmistakable.</p>
+                        <dl class="entry-facts"><div><dt>STATUS</dt><dd>Ongoing study</dd></div><div><dt>FOCUS</dt><dd>Typography &amp; layout</dd></div></dl>
+                    </div>
+                </article>
+            </div>
+            <div class="work-end"><span>THAT’S THE CURRENT SET.</span><a class="project-card-action" href="#contact">HAVE AN IDEA? <span aria-hidden="true">↗</span></a></div>
+        </section>
+
+        <section id="contact" aria-labelledby="contact-title">
+            <div class="section-kicker"><span>04</span><span>THE NEXT GOOD THING STARTS WITH A HELLO</span></div>
+            <div class="contact-panel">
+                <p>Have an idea, a question, or just want to say hi?</p>
+                <h2 id="contact-title">Let’s make<br><em>something meaningful.</em></h2>
+                <a class="button button-dark" href="mailto:aryanlimboo65@gmail.com">Email me <span aria-hidden="true">↗</span></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Aryan. Made with curiosity.</p>
+        <a href="#home">Back to top</a>
+    </footer>
+    <script>
+        const themeToggle = document.querySelector(".theme-toggle");
+        const themeToggleIcon = document.querySelector("#theme-toggle-icon");
+        const menuToggle = document.querySelector(".menu-toggle");
+        const siteHeader = document.querySelector(".site-header");
+        const darkModeMainVideo = document.querySelector(".dark-mode-main-video");
+        const reducedMotionPreference = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+        const updateDarkModeHeroVideo = () => {
+            if (document.documentElement.dataset.theme !== "dark" || reducedMotionPreference.matches) {
+                darkModeMainVideo.pause();
+                return;
+            }
+
+            darkModeMainVideo.play().catch((error) => {
+                console.error("Dark-mode main video playback failed.", error);
+            });
+        };
+
+        themeToggle.addEventListener("click", () => {
+            const nextTheme = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+            document.documentElement.dataset.theme = nextTheme;
+            localStorage.setItem("theme", nextTheme);
+            themeToggle.setAttribute("aria-checked", String(nextTheme === "dark"));
+            themeToggleIcon.textContent = nextTheme === "dark" ? "☀" : "☾";
+            updateDarkModeHeroVideo();
+        });
+
+        const closeNavigationMenu = () => {
+            menuToggle.setAttribute("aria-expanded", "false");
+            menuToggle.setAttribute("aria-label", "Open navigation menu");
+            siteHeader.classList.remove("menu-open");
+        };
+
+        menuToggle.addEventListener("click", () => {
+            const isExpanded = menuToggle.getAttribute("aria-expanded") === "true";
+            menuToggle.setAttribute("aria-expanded", String(!isExpanded));
+            menuToggle.setAttribute("aria-label", isExpanded ? "Open navigation menu" : "Close navigation menu");
+            siteHeader.classList.toggle("menu-open", !isExpanded);
+        });
+
+        document.querySelectorAll("#main-navigation a").forEach((link) => {
+            link.addEventListener("click", closeNavigationMenu);
+        });
+
+        if (document.documentElement.dataset.theme === "dark") {
+            themeToggle.setAttribute("aria-checked", "true");
+            themeToggleIcon.textContent = "☀";
+        }
+
+        reducedMotionPreference.addEventListener("change", updateDarkModeHeroVideo);
+        updateDarkModeHeroVideo();
+
+    </script>
+</body>
+</html>
